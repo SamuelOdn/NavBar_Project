@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	background-image: url('images/computer.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+.nav-bar{
+	background: rgb(0, 200, 0);
+	text-align: center;
+}
+
+.nav-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+
+}
+
+.nav-bar ul li{
+	padding: 15px;
+	margin: 15px;
+	width: 150px;
+
+}
+
+.nav-bar ul li a{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+.active, .nav-bar ul li:hover{
+	background:#2bab0d;
+	border-radius: 2px;
+
+}
+
+.nav-bar .fa{
+	margin-right: 10px;
+}
+
+.sous-menu-1{
+	display: none;
+}
+
+.nav-bar ul li:hover .sous-menu-1{
+	display: block;
+	position: absolute;
+	background: rgb(0, 200, 0);
+	margin-top: 15px;
+	margin-right: -15px;
+}
+
+.nav-bar ul li:hover .sous-menu-1 ul{
+	display: block;
+	margin: 10px;
+
+}
+
+.nav-bar ul li:hover .sous-menu-1 ul li{
+	width: 150px;
+	padding: 5px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+
+}
+
+.nav-bar ul li:hover .sous-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+
+.nav-bar ul li:hover .sous-menu-1 ul li a:hover{
+	color: #b2ff00;
+}
+
+.fa-angle-right{
+	float: right;
+}
+
+.sous-menu-2{
+	display: none;
+}
+
+.au-survol:hover .sous-menu-2{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	margin-left: 140px;
+	background: rgb(0, 200, 0);
+}
